@@ -1,0 +1,163 @@
+
+:root {
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* RESET CSS */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
+   font-family: inherit; /* 1 */
+   font-size: 100%; /* 1 */
+   line-height: 1.15; /* 1 */
+   margin: 0; /* 2 */
+ }
+ 
+ /**
+  * Show the overflow in IE.
+  * 1. Show the overflow in Edge.
+  */
+ 
+ button,
+ input { /* 1 */
+   overflow: visible;
+ }
+ 
+ /**
+  * Remove the inheritance of text transform in Edge, Firefox, and IE.
+  * 1. Remove the inheritance of text transform in Firefox.
+  */
+ 
+ button,
+ select { /* 1 */
+   text-transform: none;
+ }
+ 
+ /**
+  * Correct the inability to style clickable types in iOS and Safari.
+  */
+ 
+ button,
+ [type="button"],
+ [type="reset"],
+ [type="submit"] {
+   -webkit-appearance: button;
+ }
+
+button:focus {
+  outline: none;
+}
+
+/* CONTAINER */
+
+.container {
+  margin: 0 30px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+/* ELEMENTOS BASE */
+
+body {
+  margin: 0;
+  background: var(--preto);
+  font-family: 'Arial', Times, sans-serif;
+  color: #FFFFFF;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times, sans-serif;
+}
+
+header nav a {
+  color: #AAAAAA;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+header nav a:hover {
+  color: #FFFFFF;
+}
+
+/* FILMES PRINCIPAL / CONTEUDO PRINCIPAL */
+
+.filme-principal {
+  font-size: 18px;
+  height: auto;
+
+  background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/src/img/capa.jpg');
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .botao {
+  background-color: rgba(0,0,0,.50);
+  color: #FFFFFF;
+  
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size:  14px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.filme-principal .botao:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.filme-principal .botao i {
+  margin-right: 8px;
+}
+
+/* CARROSEL DE IMGANES */
+
+.carrosel-filmes {
+  margin-top: 15px;
+}
+
+.box-filme {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
